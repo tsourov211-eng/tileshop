@@ -208,7 +208,7 @@ export default function FeaturedCollectionPage() {
                     </div>
 
                     <Link href={`/product/${prod.id}`}>
-                      <h3 className="text-xs font-semibold text-stone-900 group-hover:text-[#1e5b55] transition-colors line-clamp-2 min-h-[32px] cursor-pointer">
+                      <h3 className="text-base font-semibold text-stone-900 group-hover:text-[#1e5b55] transition-colors line-clamp-2 min-h-[48px] cursor-pointer">
                         {prod.name}
                       </h3>
                     </Link>

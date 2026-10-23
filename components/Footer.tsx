@@ -106,11 +106,10 @@ export default function Footer() {
           <ul className="space-y-2.5 text-stone-400">
             <li className="text-white font-semibold flex items-center gap-1.5">
               <Phone size={13} className="text-[#69c6bc]" />
-              888-398-6595
+              000-000-0000
             </li>
             <li>Customer Service Hours:</li>
-            <li className="text-stone-300">Mon–Fri: 8am–6pm CST</li>
-            <li className="text-stone-300">Sat–Sun: Closed</li>
+            <li className="text-stone-300">Demo hours — not available</li>
             <li className="pt-2"><a href="#" className="hover:text-white transition-colors">Return Policy</a></li>
             <li><a href="#" className="hover:text-white transition-colors">Track Order</a></li>
           </ul>

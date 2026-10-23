@@ -6,7 +6,6 @@ import {
   Star,
   Heart,
   ShoppingBag,
-  Sparkles,
   ArrowRight,
   Check,
   ShieldCheck,
@@ -135,11 +134,6 @@ export default function HomePage() {
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 py-20 text-center flex flex-col items-center">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[11px] font-semibold uppercase tracking-[0.2em] text-stone-200 mb-5">
-            <Sparkles size={13} className="text-amber-300" />
-            Exclusive Designer Series
-          </span>
-
           <h1 className="font-editorial text-4xl sm:text-6xl lg:text-7xl font-normal tracking-tight text-white leading-[1.08] max-w-3xl">
             Nate Berkus <span className="italic font-light">x</span> The Tile Shop
           </h1>
@@ -170,16 +164,16 @@ export default function HomePage() {
             <Link
               key={space.title}
               href={space.link}
-              className="group flex flex-col items-center text-center cursor-pointer transition-all duration-300"
+              className="group flex flex-col items-center text-center cursor-pointer transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-stone-100 shadow-sm transition-all duration-300 group-hover:scale-105 group-hover:shadow-md">
+              <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-stone-100 shadow-sm transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl">
                 <img
                   src={space.img}
                   alt={space.title}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="mt-3 text-sm sm:text-base font-normal text-stone-900 group-hover:font-semibold group-hover:text-[#1e5b55] transition-all">
+              <h3 className="mt-3 text-sm sm:text-base font-semibold text-stone-900 group-hover:text-[#1e5b55] transition-all">
                 {space.title}
               </h3>
             </Link>
@@ -386,8 +380,8 @@ export default function HomePage() {
               <Palette size={20} />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-stone-900">Curated Design Ideas</h4>
-              <p className="text-[11px] text-stone-500">Inspiring palettes &amp; installation guides</p>
+              <h4 className="text-sm font-semibold text-stone-900">Curated Design Ideas</h4>
+              <p className="text-xs font-semibold text-stone-500">Inspiring palettes &amp; installation guides</p>
             </div>
           </div>
 
@@ -396,8 +390,8 @@ export default function HomePage() {
               <ShoppingBag size={20} />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-stone-900">$3 Tile Samples</h4>
-              <p className="text-[11px] text-stone-500">Shipped straight to your doorstep</p>
+              <h4 className="text-sm font-semibold text-stone-900">$3 Tile Samples</h4>
+              <p className="text-xs font-semibold text-stone-500">Shipped straight to your doorstep</p>
             </div>
           </div>
 
@@ -406,8 +400,8 @@ export default function HomePage() {
               <Truck size={20} />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-stone-900">Job-Site Delivery</h4>
-              <p className="text-[11px] text-stone-500">Fast, reliable curbside delivery nationwide</p>
+              <h4 className="text-sm font-semibold text-stone-900">Job-Site Delivery</h4>
+              <p className="text-xs font-semibold text-stone-500">Fast, reliable curbside delivery nationwide</p>
             </div>
           </div>
 
@@ -416,8 +410,8 @@ export default function HomePage() {
               <ShieldCheck size={20} />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-stone-900">Tile Experts Since 1985</h4>
-              <p className="text-[11px] text-stone-500">Premium quality and craftsmanship</p>
+              <h4 className="text-sm font-semibold text-stone-900">Tile Experts Since 1985</h4>
+              <p className="text-xs font-semibold text-stone-500">Premium quality and craftsmanship</p>
             </div>
           </div>
         </div>

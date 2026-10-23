@@ -9,7 +9,6 @@ import {
   MapPin,
   Menu,
   X,
-  Sparkles,
   ArrowRight,
   Phone,
   Lock,
@@ -184,7 +183,7 @@ export default function Header() {
 
         {/* 3. PRIMARY MEGA NAVIGATION */}
         <nav className="hidden lg:block border-t border-[#f0eee9] bg-white">
-          <div className="max-w-[1360px] mx-auto px-10 flex items-center justify-between text-xs font-medium text-[#3b3a37]">
+          <div className="max-w-[1360px] mx-auto px-10 flex items-center justify-between text-[13px] font-medium text-[#3b3a37]">
             <ul className="flex items-center gap-8 py-3">
               <li
                 onMouseEnter={() => setActiveMegaMenu('tile-stone')}
@@ -207,18 +206,16 @@ export default function Header() {
               <li className="relative cursor-pointer">
                 <Link
                   href="/featured/checkerboard"
-                  className="py-2 text-[#9a4b2a] font-semibold hover:text-[#78361b] transition-colors flex items-center gap-1"
+                  className="py-2 text-[#9a4b2a] font-semibold hover:text-[#78361b] transition-colors"
                 >
-                  <Sparkles size={13} />
                   Exclusive Collections
                 </Link>
               </li>
               <li className="relative cursor-pointer">
                 <Link
                   href="/featured/best-sellers"
-                  className="py-2 text-[#1e5b55] font-semibold hover:text-[#184843] transition-colors flex items-center gap-1"
+                  className="py-2 text-[#1e5b55] font-semibold hover:text-[#184843] transition-colors"
                 >
-                  <Sparkles size={13} />
                   Featured &amp; Best Sellers
                 </Link>
               </li>
@@ -650,7 +647,7 @@ export default function Header() {
               <X size={18} />
             </button>
             <h3 className="font-editorial text-2xl font-bold text-stone-900">Find A Tile Shop Showroom</h3>
-            <p className="text-xs text-stone-500 mt-1">Explore over 140+ showrooms across the United States.</p>
+            <p className="text-xs text-stone-500 mt-1">Demo locator only — real showroom locations are not available.</p>
             <div className="mt-4 flex gap-2">
               <input
                 type="text"
@@ -658,7 +655,7 @@ export default function Header() {
                 className="w-full border rounded-lg p-2.5 text-xs outline-none focus:border-[#1e5b55]"
               />
               <button
-                onClick={() => alert('Found 3 nearby showrooms within 25 miles!')}
+                onClick={() => alert('Demo only: showroom search is not connected to real location data.')}
                 className="bg-[#1e5b55] text-white px-4 py-2.5 rounded-lg text-xs font-semibold"
               >
                 Search

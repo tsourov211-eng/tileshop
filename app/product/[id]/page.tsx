@@ -112,7 +112,7 @@ export default function ProductDetailPage() {
               <span className="text-stone-500 font-mono text-[11px]">SKU: {product.specs.sku}</span>
             </div>
 
-            <h1 className="font-editorial text-3xl sm:text-4xl text-stone-900 font-normal mt-2 leading-snug">
+            <h1 className="font-editorial text-[2rem] sm:text-[2.375rem] text-stone-900 font-normal mt-2 leading-snug">
               {product.name}
             </h1>
 
@@ -274,7 +274,7 @@ export default function ProductDetailPage() {
                 </Link>
                 <div className="p-4">
                   <Link href={`/product/${rel.id}`}>
-                    <h4 className="text-xs font-semibold text-stone-900 group-hover:text-[#1e5b55] truncate cursor-pointer">
+                    <h4 className="text-base font-semibold text-stone-900 group-hover:text-[#1e5b55] truncate cursor-pointer">
                       {rel.name}
                     </h4>
                   </Link>

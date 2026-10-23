@@ -1,6 +1,6 @@
 'use client';
 
-import { Heart, X, ShoppingBag, ArrowRight, Trash2, Sparkles } from 'lucide-react';
+import { Heart, X, ShoppingBag, ArrowRight, Trash2 } from 'lucide-react';
 import Link from 'next/link';
 import { useCart } from '@/context/CartContext';
 import { ALL_PRODUCTS, Product } from '@/lib/data';
